@@ -1,48 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portofolio Kiki</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio</title>
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-font-family: Arial;
-text-align:center;
 background:#f4f4f4;
 }
 
-.container{
-margin-top:100px;
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
 }
 
-h1{
+.logo{
+font-weight:bold;
+}
+
+.logo span{
+color:#888;
+font-weight:normal;
+margin-left:5px;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#555;
+font-size:14px;
+}
+
+/* MAIN SECTION */
+
+.main{
+display:flex;
+align-items:center;
+justify-content:center;
+height:80vh;
+position:relative;
+}
+
+/* BACKGROUND BOX */
+
+.bg-box{
+position:absolute;
+left:120px;
+width:350px;
+height:420px;
+background:#d8cfc6;
+}
+
+/* PROFILE CARD */
+
+.card{
+position:absolute;
+left:200px;
+width:260px;
+background:white;
+text-align:center;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.card h2{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.card p{
+font-size:12px;
+letter-spacing:3px;
+color:#777;
+margin-top:15px;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social i{
+margin:0 8px;
 color:#333;
 }
 
-button{
-padding:10px 20px;
-background:#007bff;
+/* TEXT SIDE */
+
+.text{
+margin-left:350px;
+max-width:420px;
+}
+
+.text h1{
+font-size:70px;
+margin-bottom:10px;
+}
+
+.text h3{
+font-weight:normal;
+color:#444;
+margin-bottom:20px;
+}
+
+.buttons{
+margin-bottom:20px;
+}
+
+.btn1{
+background:#2d6cdf;
 color:white;
 border:none;
-border-radius:5px;
+padding:10px 25px;
+border-radius:20px;
+margin-right:10px;
+cursor:pointer;
 }
+
+.btn2{
+border:1px solid #333;
+background:none;
+padding:10px 25px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.text p{
+color:#666;
+font-size:14px;
+line-height:1.6;
+margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
+position:absolute;
+bottom:20px;
+left:60px;
+font-size:12px;
+color:#777;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
-<h1>Halo, Saya Kiki Zanuar</h1>
+<nav>
 
-<p>
-Freelancer Penulis & Web Designer
-</p>
+<div class="logo">
+■ Maya Nelson <span>/ PROJECT MANAGER</span>
+</div>
 
-<p>
-Saya membantu membuat artikel, desain website, dan produk digital.
-</p>
+<div class="menu">
+<a href="#">ABOUT ME</a>
+<a href="#">RESUME</a>
+<a href="#">PROJECTS</a>
+<a href="#">CONTACT</a>
+</div>
 
-<button>Hubungi Saya</button>
+</nav>
+
+<section class="main">
+
+<div class="bg-box"></div>
+
+<div class="card">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<h2>Maya Nelson</h2>
+
+<p>PROJECT MANAGER</p>
+
+<div class="social">
+<i>f</i>
+<i>t</i>
+<i>in</i>
+<i>ig</i>
+</div>
 
 </div>
+
+<div class="text">
+
+<h1>Hello</h1>
+
+<h3>Here's who I am & what I do</h3>
+
+<div class="buttons">
+<button class="btn1">RESUME</button>
+<button class="btn2">PROJECTS</button>
+</div>
+
+<p>
+I'm a paragraph. Click here to add your own text and edit me.
+It's easy. Just click "Edit Text" or double click me to add
+your own content and make changes to the font.
+</p>
+
+<p>
+I'm a great place for you to tell a story and let your users
+know a little more about you.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2023 by Maya Nelson. Proudly created with portfolio template.
+</footer>
 
 </body>
 </html>
